@@ -1,5 +1,5 @@
 // Selection of HTML objects
-const burger = document.querySelector("#burger");
+const burger = document.querySelector(".burgerProxy");
 const sidemenu = document.querySelector(".sidemenu");
 const sidemenuLink = document.querySelectorAll(".sidemenu ul li a");
 
@@ -9,8 +9,7 @@ function toggleMenu() {
   sidemenu.classList.toggle("active");
 }
 
-// Calling the function after click event occurs
-sidemenuLink.forEach((link) => {
-  link.addEventListener("click", toggleMenu);
-});
+
+
 burger.addEventListener("click", toggleMenu);
+

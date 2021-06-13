@@ -2,16 +2,19 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Demo - Sidemenu  Vanilla Js</title>
+  <title>Demo - Sidemenu </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./style.css">
+
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="header">
-  <div class="header__inner flex--end">
+  <div class="header__inner">
      
     <div class = "navWrap">
+      <div class="burgerProxy"></div>
       <div id="burger">
         <div></div>
         <div></div>
@@ -21,11 +24,43 @@
       
       <nav class="sidemenu">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Get in Touch</a></li>
+          <div class = "linkWrap">
+          <li><a href="#">
+            <span class = "nav__icon">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.7 22.6H35.2V23.1V35.7C35.2 36.1073 35.1093 36.5079 34.8881 36.7959C34.6852 37.0602 34.319 37.3 33.6 37.3H25.7V25.2V24.7H25.2H16.8H16.3V25.2V37.3H8.39999C7.68101 37.3 7.31476 37.0602 7.11184 36.7959C6.89068 36.5079 6.79999 36.1073 6.79999 35.7V23.1V22.6H6.29999H2.78879C2.64012 22.6 2.538 22.5887 2.47068 22.5759C2.49107 22.5351 2.51955 22.486 2.558 22.4286C2.66113 22.2747 2.81607 22.0902 3.01944 21.8797L19.8669 5.01538L19.867 5.01543L19.8729 5.00927C20.1798 4.69141 20.5835 4.52794 21 4.50729C21.4176 4.52794 21.8204 4.69002 22.1262 5.00838L22.1261 5.00845L22.1331 5.01538L38.9786 21.8777C39.1824 22.0887 39.3378 22.2737 39.4412 22.4279C39.4799 22.4856 39.5085 22.5349 39.529 22.576C39.4617 22.5887 39.3597 22.6 39.2112 22.6H35.7Z" stroke="white"/>
+              </svg></span>
+              <span class = "nav__text">
+
+            Home
+          </span>
+          </a></li></div>
+          <div class = "linkWrap">
+            <li><a href="#">
+              <span class = "nav__icon">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.9166 20.5833V21.0833H17.4166H30.0833C30.2494 21.0833 30.4099 21.1435 30.5351 21.2527C30.6567 21.3587 30.7369 21.5039 30.7622 21.6628L30.7708 21.7878C30.7616 29.3351 24.6465 34.7292 17.0208 34.7292C13.3741 34.7292 9.87672 33.2805 7.29809 30.7019C4.71947 28.1233 3.27081 24.6259 3.27081 20.9792C3.27081 13.3478 8.67296 7.22918 16.2291 7.22918C16.4115 7.22918 16.5863 7.30161 16.7153 7.43054C16.8442 7.55947 16.9166 7.73434 16.9166 7.91668V20.5833ZM20.9791 3.27084C24.6259 3.27084 28.1232 4.7195 30.7019 7.29812C33.2805 9.87675 34.7291 13.3741 34.7291 17.0208C34.7291 17.2032 34.6567 17.378 34.5278 17.507C34.3988 17.6359 34.224 17.7083 34.0416 17.7083H20.9791C20.7968 17.7083 20.6219 17.6359 20.493 17.507C20.3641 17.378 20.2916 17.2032 20.2916 17.0208V3.95834C20.2916 3.77601 20.3641 3.60114 20.493 3.47221C20.6219 3.34328 20.7968 3.27084 20.9791 3.27084Z" stroke="white"/>
+                  </svg>
+                  </span>
+                <span class = "nav__text">
+  
+              Data
+            </span>
+            </a></li></div>
+          <div class = "linkWrap">
+            <li><a href="#">
+              <span class = "nav__icon">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.9339 21.1763L21.0994 21.0994L21.1763 20.9339L27.6533 7.0109L28.2311 5.76885L26.9891 6.34665L13.0661 12.8237L12.9006 12.9006L12.8237 13.0661L6.34665 26.9891L5.76885 28.2311L7.0109 27.6533L20.9339 21.1763ZM15.63 17C15.63 16.2391 16.2391 15.63 17 15.63C17.7609 15.63 18.37 16.2391 18.37 17C18.37 17.7609 17.7609 18.37 17 18.37C16.2391 18.37 15.63 17.7609 15.63 17ZM0.5 17C0.5 7.89214 7.89214 0.5 17 0.5C26.1079 0.5 33.5 7.89214 33.5 17C33.5 26.1079 26.1079 33.5 17 33.5C7.89214 33.5 0.5 26.1079 0.5 17Z" stroke="white"/>
+                  </svg>
+                  
+                  </span>
+                <span class = "nav__text">
+  
+              Explore
+            </span>
+            </a></li></div>
+        
         </ul>
       </nav>
       
@@ -34,25 +69,32 @@
 
 
 
-    <!-- <a href="/index.html">
+    <a href="/index.html">
         <div class="logo">
 Logo        </div>
     </a>
     
     <ul class="nav-links">
-      <li><a href="/work.html">Work</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="/blog.html">Blog</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">Links</a></li>
+      <li><a href="#">Links</a></li>
     </ul>
 
-    </div> -->
+    </div>
 
 
   </div>
 </div>
-<!-- partial -->
+
+
+<main>
+
+
+</main>
   <script  src="./script.js"></script>
+
+
 
 </body>
 </html>
